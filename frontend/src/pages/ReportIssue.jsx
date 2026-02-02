@@ -15,7 +15,6 @@ function ReportIssue({ issues, setIssues }) {
     };
 
     setIssues([newIssue, ...issues]);
-
     setTitle("");
     setDescription("");
   };
@@ -24,23 +23,27 @@ function ReportIssue({ issues, setIssues }) {
     <div className="container">
       <h2>Report an Issue</h2>
 
-      <form onSubmit={submitHandler}>
-        <label>Issue Title</label>
-        <input
-          value={title}
-          onChange={(e) => setTitle(e.target.value)}
-          required
-        />
+      <div className="card">
+        <form onSubmit={submitHandler}>
+          <label>Issue Title</label>
+          <input
+            type="text"
+            value={title}
+            onChange={(e) => setTitle(e.target.value)}
+            required
+          />
 
-        <label>Description</label>
-        <textarea
-          value={description}
-          onChange={(e) => setDescription(e.target.value)}
-          required
-        />
+          <label>Description</label>
+          <textarea
+            rows="4"
+            value={description}
+            onChange={(e) => setDescription(e.target.value)}
+            required
+          />
 
-        <button type="submit">Submit Issue</button>
-      </form>
+          <button type="submit">Submit Issue</button>
+        </form>
+      </div>
     </div>
   );
 }

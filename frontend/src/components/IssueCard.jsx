@@ -1,12 +1,14 @@
 function IssueCard({ issue }) {
   return (
-    <div className="card">
-      <h3>{issue.title}</h3>
-      <p>{issue.description}</p>
+    <div className="card issue-card">
+      <div className="issue-header">
+        <h3>{issue.title}</h3>
+        <span className={`status ${issue.status.toLowerCase()}`}>
+          {issue.status}
+        </span>
+      </div>
 
-      <span className={`status ${issue.status.toLowerCase()}`}>
-        {issue.status}
-      </span>
+      <p className="issue-desc">{issue.description}</p>
     </div>
   );
 }
