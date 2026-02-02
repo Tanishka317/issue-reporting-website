@@ -2,12 +2,12 @@ function Home() {
   return (
     <div className="home">
 
-      {/* HERO SECTION */}
+      {/* HERO */}
       <section className="hero">
         <h1>Issue Reporting Platform</h1>
         <p>
-          A simple and transparent way to report issues, track progress,
-          and ensure faster resolution.
+          Report issues, track progress, and ensure faster resolution
+          with a transparent and simple system.
         </p>
 
         <div className="hero-buttons">
@@ -16,36 +16,64 @@ function Home() {
         </div>
       </section>
 
-      {/* FEATURES SECTION */}
+      {/* STATS */}
+      <section className="stats">
+        <div className="stat-card">
+          <h2>120+</h2>
+          <p>Issues Reported</p>
+        </div>
+        <div className="stat-card">
+          <h2>95%</h2>
+          <p>Resolution Rate</p>
+        </div>
+        <div className="stat-card">
+          <h2>24/7</h2>
+          <p>Availability</p>
+        </div>
+      </section>
+
+      {/* FEATURES */}
       <section className="features">
         <div className="feature-card">
-          <h3>Easy Reporting</h3>
-          <p>
-            Submit issues in seconds using a simple and intuitive form.
-          </p>
+          <h3>Simple Reporting</h3>
+          <p>Users can report issues quickly with a clean form.</p>
         </div>
 
         <div className="feature-card">
           <h3>Live Tracking</h3>
-          <p>
-            Track issue status in real time — pending or resolved.
-          </p>
+          <p>Track issues as Pending or Resolved in real time.</p>
         </div>
 
         <div className="feature-card">
-          <h3>Admin Control</h3>
-          <p>
-            Admins can manage issues efficiently from a single dashboard.
-          </p>
+          <h3>Admin Dashboard</h3>
+          <p>Admins manage issues efficiently from one place.</p>
         </div>
       </section>
 
-      {/* FOOTER CTA */}
+      {/* HOW IT WORKS */}
+      <section className="workflow">
+        <h2>How It Works</h2>
+
+        <div className="workflow-steps">
+          <div className="step">
+            <span>1</span>
+            <p>Report an issue</p>
+          </div>
+          <div className="step">
+            <span>2</span>
+            <p>Admin reviews</p>
+          </div>
+          <div className="step">
+            <span>3</span>
+            <p>Issue resolved</p>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
       <section className="cta">
-        <h2>Built for Speed, Transparency & Simplicity</h2>
-        <p>
-          Designed as a hackathon-ready solution using modern web technologies.
-        </p>
+        <h2>Built for Transparency & Efficiency</h2>
+        <p>Designed as a modern solution for issue management.</p>
       </section>
 
     </div>
